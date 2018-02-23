@@ -1,4 +1,4 @@
---Nota: cunado buscamos informaci�n de un cliente,hay que tener cuidado de que el atributo a buscar no tenga valor NULL.
+--Nota: cunado buscamos información de un cliente,hay que tener cuidado de que el atributo a buscar no tenga valor NULL.
 --A la hora de comparar,tener cuidado de que no sean valores nulos.
 --Da una subcadena los 5 primeras letras de la tabla employyes 
 select substring(title,1,5)from employees
@@ -23,7 +23,7 @@ select cast(rand()*10000 as int)
 --select sign()from employees 
 --Sumar 10 dias mas a las fechas de orders y orderdate 
 select dateAdd(day,10,orderdate) from Orders
---Diferencia en a�os entre la fecha de hoy y la fecha de factura.Cuanto a�os han pasado desde que se han facturado
+--Diferencia en años entre la fecha de hoy y la fecha de factura.Cuanto años han pasado desde que se han facturado
 --esas facturas
 select datediff(yyyy,orderdate,getdate())from Orders 
 select DATENAME(M , getDate())
@@ -31,6 +31,9 @@ select DATENAME(M , getDate())
 select datepart(Dw,getdate())
 --Dia del mes
 select DATEPART(D,GETDATE())
---Muestra la fecha actual en formato cadena.
+--Muestra la fecha actual en formato cadena.PAra el dia siempre se pone 2,mes se pone 2 y año se pone 4.
 select 'fecha: '+str(day(getdate()),2)+'/'+str(month(getdate()),2)+'/'+str(year(getdate()),4)
-
+--Permite elegir una base de datos.use + nombredelabase de datos.
+use northwind 
+select * from orders
+GO  --Indica final de un lote para indicar que desde use hasta GO es un lote de la base de datos especificade en use.
