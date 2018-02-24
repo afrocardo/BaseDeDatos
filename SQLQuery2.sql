@@ -36,4 +36,4 @@ select 'fecha: '+str(day(getdate()),2)+'/'+str(month(getdate()),2)+'/'+str(year(
 --Permite elegir una base de datos.use + nombredelabase de datos.
 use northwind 
 select * from orders
-GO  --Indica final de un lote para indicar que desde use hasta GO es un lote de la base de datos especificade en use.
+GO  --Indica final de un lote para indicar que desde use hasta GO es un lote de la base de datos especificada en use.
