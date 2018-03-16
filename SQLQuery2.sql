@@ -37,3 +37,9 @@ select 'fecha: '+str(day(getdate()),2)+'/'+str(month(getdate()),2)+'/'+str(year(
 use northwind 
 select * from orders
 GO  --Indica final de un lote para indicar que desde use hasta GO es un lote de la base de datos especificada en use.
+--Tema 10(es para administración de base de datos)en esta asigantura no se va a dar.Esta asignatura es solo diseño de base de datos.
+grant create database to Mary,Juan
+grant msert,delete
+deny on authors to mary
+revoke create database from noy 
+revoke insert on authors from mary 
