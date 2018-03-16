@@ -1,4 +1,5 @@
 --Nota: cunado buscamos información de un cliente,hay que tener cuidado de que el atributo a buscar no tenga valor NULL.
+--Nota: En el examen entrea el tema 12 de practicas.
 --A la hora de comparar,tener cuidado de que no sean valores nulos.
 --Da una subcadena los 5 primeras letras de la tabla employyes 
 select substring(title,1,5)from employees
